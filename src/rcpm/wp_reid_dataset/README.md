@@ -7,7 +7,7 @@ MM, Oral Paper，2020.
 [[PDF](https://dl.acm.org/doi/10.1145/3394171.3413984)]
 
 ## WP-ReID Dataset
-![WP-ReID Dataset](./../cover/dataset.png)
+![WP-ReID Dataset](../../../cover/dataset.png)
 
 ```
 ├── /path/to/WP-ReID

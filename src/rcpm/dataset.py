@@ -2,14 +2,14 @@ import numpy as np
 import copy
 import logging
 from prettytable import PrettyTable
-from utils import np_filter
-from wp_reid_dataset import WPReID
+from .utils import np_filter
+from .wp_reid_dataset import WPReID
 
 
 class DataBank(object):
-    def __init__(self, minframes):
+    def __init__(self, minframes, raw_data_folder, cropped_image_dir, split_file_dir):
 
-        data_dict = WPReID().get_dict()
+        data_dict = WPReID(raw_data_folder, cropped_image_dir, split_file_dir).get_dict()
 
         self.images_dir_list = copy.deepcopy(data_dict['dir'])
         self.gps_info = data_dict['gps']

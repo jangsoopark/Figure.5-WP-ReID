@@ -1,9 +1,15 @@
-from dataset import DataBank
-from utils import file_abs_path, DataPacker
-from eval import update_with_gps
+from rcpm.dataset import DataBank
+from rcpm.eval import update_with_gps
+from pathlib import Path
+from rcpm.utils import DataPacker, file_abs_path
 
 if __name__ == '__main__':
-    wp_reid_dataset = DataBank(minframes=3)
+    wp_reid_dataset = DataBank(
+        minframes=3,
+        raw_data_folder=Path('/data'),
+        cropped_image_dir=Path('/data') / 'cropped_data',
+        split_file_dir=file_abs_path(__file__) / 'files/wp_reid_info.json'
+    )
 
     files_dir = file_abs_path(__file__) / 'files'
     mmt_duke_dist_file = files_dir / 'mmt_duke_g2g_distmat.json'

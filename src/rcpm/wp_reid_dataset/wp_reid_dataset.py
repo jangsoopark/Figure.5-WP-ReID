@@ -1,15 +1,15 @@
-from pathlib import Path
-from utils import DataPacker, file_abs_path
-import numpy as np
 
+
+import numpy as np
+from rcpm.utils import DataPacker
 
 class WPReID(object):
-    def __init__(self):
-        self.raw_data_folder = Path('/data')
-        self.cropped_images_dir = self.raw_data_folder / 'cropped_data'
+    def __init__(self, raw_data_folder, cropped_image_dir, split_file_dir):
+        self.raw_data_folder = raw_data_folder
+        self.cropped_images_dir = cropped_image_dir
         # Where you put the images data. You can contact us by email for this dataset.
 
-        self.split_file_dir = file_abs_path(__file__).parent / 'files' / 'wp_reid_info.json'
+        self.split_file_dir = split_file_dir
 
         self.all_image_num = 106578
         self.resize_hw = (256, 128)

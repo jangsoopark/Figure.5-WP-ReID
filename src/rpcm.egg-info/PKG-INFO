@@ -1,3 +1,21 @@
+Metadata-Version: 2.1
+Name: rpcm
+Version: 0.0.1
+Summary: A python package of RPCM
+Home-page: https://github.com/jangsoopark/WP-ReID
+Author: jangsoopark
+Author-email: jangsoopark@kw.ac.kr
+Project-URL: Bug Tracker, https://github.com/jangsoopark/WP-ReID/pulls
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: prettytable
+Requires-Dist: numpy
+Requires-Dist: ray[tune]
+
 # WP-ReID
 Implementation of "Vision Meets Wireless Positioning: Effective Person Re-identification with Recurrent Context Propagation"
 

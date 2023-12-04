@@ -1,6 +1,6 @@
-from video_reid_performance import compute_video_cmc_map
-from update_module import get_vision_record_dist, visual_affinity_update, trajectory_distance_update, norm_data
-from eval_tools import get_signal_match_cmc
+from .video_reid_performance import compute_video_cmc_map
+from .update_module import get_vision_record_dist, visual_affinity_update, trajectory_distance_update, norm_data
+from .eval_tools import get_signal_match_cmc
 from copy import deepcopy
 import numpy as np
 
