@@ -22,7 +22,7 @@ if __name__ == '__main__':
     print('MMT Duke')
     distmat = DataPacker.load(mmt_duke_dist_file)['g2g_distmat']
     update_with_gps(distmat, wp_reid_dataset.test_info, wp_reid_dataset.probe_index, wp_reid_dataset.gallery_index,
-                    wp_reid_dataset.gps_info, wp_reid_dataset.trajectory_info, k=9)
+                    wp_reid_dataset.gps_info, wp_reid_dataset.trajectory_info, k=8)
 
     print('MMT MARS')
     distmat = DataPacker.load(mmt_mars_dist_file)['g2g_distmat']
@@ -48,4 +48,3 @@ if __name__ == '__main__':
     distmat = DataPacker.load(tkp_mars_dist_file)['g2g_distmat']
     update_with_gps(distmat, wp_reid_dataset.test_info, wp_reid_dataset.probe_index, wp_reid_dataset.gallery_index,
                     wp_reid_dataset.gps_info, wp_reid_dataset.trajectory_info, k=4)
-
